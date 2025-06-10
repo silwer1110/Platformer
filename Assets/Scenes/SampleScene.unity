@@ -6915,7 +6915,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6923,16 +6923,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.03714136, y: 0.22785601}
-      - {x: -0.14285363, y: 0.009979531}
-      - {x: -0.14285363, y: -0.05714142}
-      - {x: -0.13003069, y: -0.08919847}
-      - {x: -0.03428272, y: -0.26856562}
-      - {x: 0.015007973, y: -0.26785102}
-      - {x: 0.048570678, y: -0.20425719}
-      - {x: 0.12640274, y: -0.06175542}
-      - {x: 0.12375152, y: 0.0067541376}
-      - {x: 0.019984767, y: 0.22642681}
+    - - {x: -0.05477289, y: 0.43649563}
+      - {x: -0.28684318, y: 0.009979531}
+      - {x: -0.27802742, y: -0.110036016}
+      - {x: -0.06538111, y: -0.52704775}
+      - {x: 0.01861187, y: -0.5271611}
+      - {x: 0.22952557, y: -0.10035172}
+      - {x: 0.22194676, y: 0.013198197}
+      - {x: 0.029429317, y: 0.4201727}
+      - {x: 0.0075548887, y: 0.44141743}
+      - {x: -0.05935712, y: 0.44094345}
   m_UseDelaunayMesh: 0
 --- !u!114 &1931058527
 MonoBehaviour:
@@ -7008,7 +7008,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.9, y: 2.91, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7467,7 +7467,10 @@ GameObject:
   - component: {fileID: 2121241656}
   - component: {fileID: 2121241655}
   - component: {fileID: 2121241659}
+  - component: {fileID: 2121241664}
   - component: {fileID: 2121241661}
+  - component: {fileID: 2121241663}
+  - component: {fileID: 2121241662}
   - component: {fileID: 2121241658}
   - component: {fileID: 2121241660}
   - component: {fileID: 2121241654}
@@ -7659,6 +7662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 2121241657}
   _spriteRenderer: {fileID: 2121241655}
+  _fliper: {fileID: 2121241662}
 --- !u!114 &2121241660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7690,6 +7694,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _jumper: {fileID: 2121241660}
   _mover: {fileID: 2121241658}
+  _inputReader: {fileID: 2121241664}
+--- !u!114 &2121241662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121241651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7431f3a1524e20f4e8e077f74ae4f494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 2121241656}
+--- !u!114 &2121241663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121241651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3262300612641e04ab40a6db3a6346ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2121241664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121241651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f67c1bb7749bdc04cb6de0c50a34a184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -23,7 +23,7 @@ public class EnemyMovment : MonoBehaviour
         {
             target = _waypoints[currentIndex];
 
-            while (Vector2.Distance(transform.position, target.position) > distanceBetweenPoints)
+            while ((transform.position - target.position).sqrMagnitude > distanceBetweenPoints)
             {
                 transform.position = Vector2.MoveTowards(transform.position, target.position, _speed * Time.deltaTime);
                 yield return null;
