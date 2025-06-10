@@ -6,8 +6,8 @@ public class Crystal : MonoBehaviour
 {
     public event UnityAction<Crystal> Deactivated;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {      
+    public void Deactivate()
+    {
         Deactivated?.Invoke(this);
     }
 

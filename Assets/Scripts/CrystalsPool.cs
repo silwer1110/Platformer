@@ -7,7 +7,7 @@ public class CrystalsPool : MonoBehaviour
 
     private ObjectPool<Crystal> _crystals;
     private int _maxSize = 20;
-    private readonly int _capacity = 10;
+    private int _capacity = 10;
 
     private void Awake()
     {
