@@ -7,7 +7,7 @@ public class Jumper : MonoBehaviour
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private float _jumpForce;
 
-    public void ActionJump(bool jumpPressed)
+    public void Jump(bool jumpPressed)
     {
         if (jumpPressed && IsGrounded())
             _rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
