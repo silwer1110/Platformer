@@ -4,14 +4,14 @@ public class Fliper : MonoBehaviour
 {
     [SerializeField] private Transform _transform;
 
+    private Vector2 _left = new(0f, 180f);
+    private Vector2 _right = new(0f, 0f);
+
     public void Flip(float moveDirection)
     {
-        Vector2 left = new(0f, 180f);
-        Vector2 right = new(0f, 0f);
-
         if (moveDirection > 0)
-            _transform.rotation = Quaternion.Euler(right);
+            _transform.rotation = Quaternion.Euler(_right);
         else if (moveDirection < 0)
-            _transform.rotation = Quaternion.Euler(left);
+            _transform.rotation = Quaternion.Euler(_left);
     }
 }
