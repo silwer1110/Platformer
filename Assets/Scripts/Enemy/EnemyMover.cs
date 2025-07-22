@@ -5,11 +5,11 @@ public class EnemyMover : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
+    private float _distanceBetweenPoints = 0.01f;
+
     public IEnumerator MoveToTarget(Vector3 target)
     {
-        float distanceBetweenPoints = 0.01f;
-
-        while ((transform.position - target).sqrMagnitude > distanceBetweenPoints)
+        while ((transform.position - target).sqrMagnitude > _distanceBetweenPoints)
         {
             transform.position = Vector2.MoveTowards(transform.position, target, _speed * Time.deltaTime);
 
